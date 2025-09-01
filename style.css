@@ -1,0 +1,120 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #003366;
+      padding: 10px 0;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      margin-right: 15px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    /* === Department Pages Styling === */
+
+/* General section padding */
+.department-section {
+  padding: 60px 20px;
+}
+
+/* Headings */
+.department-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #024c95; /* Faculty blue */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Lead paragraph */
+.department-section p.lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Italic Motto */
+.department-section p.fst-italic {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Optional background for each department section */
+.department-section:nth-child(even) {
+  background-color: #f9fbfd; /* subtle grey-blue */
+  border-radius: 10px;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .department-section h2 {
+    font-size: 1.5rem;
+  }
+  .department-section p.lead {
+    font-size: 1rem;
+  }
+}
+/* Make tables responsive */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* allows horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* prevents ugly collapse on small screens */
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: #003366;
+  color: #fff;
+}
+
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
