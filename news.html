@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+<header class="">
+  <nav class="navbar navbar-expand-md navbar-dark px-3">
+    <div class="container-fluid">
+      <!-- Left: Logos and title -->
+      <div class="d-flex align-items-center gap-2">
+        <a class="navbar-brand" href="#">
+          <img src="Uniilorin logo.png" alt="Unilorin Logo" style="height: 60px;">
+        </a>
+        <a class="navbar-brand" href="#">
+          <img src="NESSA logo.png" alt="NESSE Logo" style="height: 60px;">
+        </a>
+        <span class="text-white fw-bold ms-2 d-none d-sm-inline">Faculty Of Env. Science</span>
+      </div>
+
+      <!-- Hamburger menu toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links and search -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Welcome</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">History</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Departments</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="architecture.html">Architecture</a></li>
+              <li><a class="dropdown-item" href="estate.html">Estate Management</a></li>
+              <li><a class="dropdown-item" href="planning.html">Urban and Regional Planning</a></li>
+              <li><a class="dropdown-item" href="qs.html">Quantity Surveying</a></li>
+              <li><a class="dropdown-item" href="surveying.html">Surveying and GeoInformatics</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Dean's Office</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Sub Dean's Office</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Faculty Officer</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Faculty Accountant</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
+        </ul>
+
+        <!-- Search -->
+        <div class="d-flex align-items-center mt-3 mt-md-0 ms-md-3">
+          <i class="bi bi-search search-icon text-white me-2" onclick="toggleSearch()"></i>
+          <input type="text" id="searchBox" class="form-control form-control-sm" placeholder="Search..." style="max-width: 150px;">
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- ===== NEWS SECTION ===== -->
+<section class="news-section">
+  <h2 class="news-title">Latest News</h2>
+
+  <div class="news-grid">
+
+    <!-- News Card 1 -->
+    <div class="news-card">
+      <img src="images/news1.jpg" alt="HOD Birthday" class="news-image" />
+      <div class="news-content">
+        <h3>HOD's Birthday Celebration</h3>
+        <p class="news-date">October 8, 2025</p>
+        <p class="news-description">
+          The Department celebrated Dr. Sule Adeniyi Olaniyan’s birthday...
+        </p>
+        <button class="read-more-btn" data-modal="modal1">Read More</button>
+      </div>
+    </div>
+
+    <!-- News Card 2 -->
+    <div class="news-card">
+      <img src="images/news2.jpg" alt="Workshop Event" class="news-image" />
+      <div class="news-content">
+        <h3>Architecture Design Workshop</h3>
+        <p class="news-date">September 23, 2025</p>
+        <p class="news-description">
+          The annual design workshop brought together professionals...
+        </p>
+        <button class="read-more-btn" data-modal="modal2">Read More</button>
+      </div>
+    </div>
+
+    <!-- News Card 3 -->
+    <div class="news-card">
+      <img src="images/news3.jpg" alt="Award Presentation" class="news-image" />
+      <div class="news-content">
+        <h3>Best Student Award 2025</h3>
+        <p class="news-date">August 15, 2025</p>
+        <p class="news-description">
+          Congratulations to our top-performing students...
+        </p>
+        <button class="read-more-btn" data-modal="modal3">Read More</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== MODALS ===== -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>HOD's Birthday Celebration</h3>
+    <p class="modal-date">October 8, 2025</p>
+    <p>
+      The Department of Architecture joyfully celebrated the birthday of
+      Dr. Sule Adeniyi Olaniyan, our esteemed Head of Department. Faculty members
+      and students came together to appreciate his visionary leadership,
+      dedication to excellence, and inspiring mentorship. The event featured
+      brief speeches, light refreshments, and photo sessions marking a memorable day.
+    </p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Architecture Design Workshop</h3>
+    <p class="modal-date">September 23, 2025</p>
+    <p>
+      The Department hosted its annual Architecture Design Workshop, attracting
+      students, professionals, and guest speakers from across the nation. Topics
+      included sustainable urban planning, innovative design practices, and
+      digital modeling techniques. The event encouraged collaboration between
+      academia and industry leaders, fostering real-world learning experiences.
+    </p>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Best Student Award 2025</h3>
+    <p class="modal-date">August 15, 2025</p>
+    <p>
+      The Best Student Award recognizes outstanding academic achievement and
+      creative excellence in architectural design. This year’s honorees were
+      celebrated for their innovative projects and contributions to the faculty’s
+      research initiatives. The event highlighted the department’s commitment to
+      nurturing young talents for the future of sustainable architecture.
+    </p>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    Powered by the 2025/2026 NESSA Executives – The sustainability crew
+  </footer>
+<script>
+  // Open Modal
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById(btn.dataset.modal).style.display = 'block';
+    });
+  });
+
+  // Close Modal
+  document.querySelectorAll('.close-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.closest('.modal').style.display = 'none';
+    });
+  });
+
+  // Close when clicking outside modal
+  window.onclick = e => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  };
+</script>
+
+
+       <!-- Controls -->
+ <button id="backToTopBtn" title="Go to top">⬆</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleSearch() {
+      const box = document.getElementById('searchBox');
+      box.style.display = box.style.display === 'none' ? 'inline-block' : 'none';
+    }
+     AOS.init({
+    duration: 800,
+    once: true,
+  });
+   const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  </script>
+  
+</body>
+</html>

@@ -184,6 +184,28 @@ h4 {
   display: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+/* NEWS SECTION */
+.news-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .news-card img {
+    height: 180px;
+  }
+}
 
 #backToTopBtn:hover {
   background-color: #01386f;
@@ -233,6 +255,7 @@ h4 {
           <li class="nav-item"><a class="nav-link text-white" href="#faculty-officer">Faculty Officer</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#faculty-accountant">Faculty Accountant</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
         </ul>
 
         <!-- Search -->
